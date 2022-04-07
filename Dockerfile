@@ -1,6 +1,9 @@
-FROM openjdk:8-jdk-alpine
-ADD . /spring-app-1
-WORKDIR /spring-app-1
-RUN chmod +x ./mvnw
-EXPOSE 8080:8080
-ENTRYPOINT ./mvnw spring-boot:run
+FROM openjdk:11
+
+WORKDIR /CodeInsides
+
+EXPOSE 8080
+
+COPY target/code-insights-0.0.1-SNAPSHOT.jar .
+
+CMD [ "java","-jar","code-insights-0.0.1-SNAPSHOT.jar" ]
