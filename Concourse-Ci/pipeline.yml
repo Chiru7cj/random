@@ -1,16 +1,16 @@
 resource_types:
-  - name: codeinsides_image
+  - name: codeinsight
     type: docker-image
     source:
-      repository: gauravdockerbox/codeinsides_image
-      tag: codeinsides_image
+      repository: chiru77/codeinsight
+      tag: latest
 
 resources:
   - name: spring-boot-service
     type: git
     source:
       uri: https://github.com/GauravGithubbox/CodeInsides.git
-      branch: master
+      branch: main
 
   - name: spring-boot-service-docker-repository
     type: docker-image
