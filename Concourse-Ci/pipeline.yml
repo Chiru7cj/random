@@ -18,7 +18,7 @@ resources:
       email: ((docker-hub-email))
       username: ((docker-hub-username))
       password: ((docker-hub-password))
-      repository: ((docker-hub-repo-name))
+      repository: ((docker-hub-username))/((docker-hub-repo-name))
 
 #  - name: kubectl
 #    type: kubectl-resource
