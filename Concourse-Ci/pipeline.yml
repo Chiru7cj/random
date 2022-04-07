@@ -9,7 +9,7 @@ resources:
   - name: spring-boot-service
     type: git
     source:
-      uri: https://github.com/GauravGithubbox/CodeInsides.git
+      uri: https://github.com/Chiru7cj/random.git
       branch: main
 
   - name: spring-boot-service-docker-repository
