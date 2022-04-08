@@ -23,6 +23,8 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/codeInsights")
+// consuming bibucket api
+
 public class PullRequestController {
 
     private static final Logger log = LoggerFactory.getLogger(PullRequestController.class);
