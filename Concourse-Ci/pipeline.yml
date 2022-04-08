@@ -40,7 +40,7 @@ jobs:
 
   - name: package
     public: true
-    serial: true
+    serial: false
     plan:
       - get: spring-boot-service
         trigger: true
