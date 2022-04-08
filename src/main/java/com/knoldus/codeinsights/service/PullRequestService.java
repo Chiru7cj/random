@@ -124,7 +124,7 @@ public class PullRequestService {
         List<Response> valuesDto = new ArrayList<>();
         if (workspace == null || repoSlug == null || pullRequestId == null) {
 
-            log.error("Invalid Parameters");
+            log.error("Invalid Parameters plz provide valid parameters");
 
         } else {
             String url = BASE_URL + workspace + SLASH + repoSlug + PULL_REQUESTS + SLASH + pullRequestId + SLASH + ACTIVITY;
