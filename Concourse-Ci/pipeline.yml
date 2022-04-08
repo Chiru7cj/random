@@ -8,6 +8,7 @@ resource_types:
 resources:
   - name: spring-boot-service
     type: git
+    check_every: 10s
     source:
       uri: https://github.com/Chiru7cj/random.git
       branch: main
