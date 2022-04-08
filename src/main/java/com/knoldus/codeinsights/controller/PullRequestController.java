@@ -23,8 +23,6 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/codeInsights")
-// consuming bibucket api
-
 public class PullRequestController {
 
     private static final Logger log = LoggerFactory.getLogger(PullRequestController.class);
@@ -46,7 +44,6 @@ public class PullRequestController {
         actualResponse = pullRequestService.getOpenPrForSpecificRepo(user, repo);
         return new ResponseEntity<>(actualResponse, new HttpHeaders(), HttpStatus.OK);
     }
-
 
     // List pull requests that contain a commit
     @GetMapping(value = "/commits")
