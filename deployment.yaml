@@ -6,7 +6,7 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: github-actions-gke
+      app: cluster-1
   template:
     metadata:
       labels:
