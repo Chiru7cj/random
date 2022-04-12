@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: random
+  name: codeinisght
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: random
+      app: codeinisght
   template:
     metadata:
       labels:
-        app: random
+        app: codeinisght
     spec:
       containers:
         - name: app
