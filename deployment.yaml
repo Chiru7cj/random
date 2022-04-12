@@ -10,7 +10,7 @@ spec:
   template:
     metadata:
       labels:
-        app: cluster-1
+        app: github-action-gke
     spec:
       containers:
         - name: app
