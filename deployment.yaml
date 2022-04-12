@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: cluster-1
+  name: random
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: github-actions-gke
+      app: cluster-1
   template:
     metadata:
       labels:
-        app: github-actions-gke
+        app: cluster-1
     spec:
       containers:
         - name: app
