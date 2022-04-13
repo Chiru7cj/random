@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: random
+  name: concourse-ci-cd
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: random
+      app: concourse-ci-cd
   template:
     metadata:
       labels:
-        app: random
+        app: concourse-ci-cd
     spec:
       containers:
         - name: app
-          image: chiru77/githubaction:1.0.0
+          image: gcr.io/PROJECT_ID/IMAGE:TAG
           imagePullPolicy: Always
