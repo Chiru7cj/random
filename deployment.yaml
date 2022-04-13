@@ -6,11 +6,11 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: random
+      app: github-actions-gke
   template:
     metadata:
       labels:
-        app: random
+        app: github-actions-gke
     spec:
       containers:
         - name: app
