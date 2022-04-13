@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: github-actions-gke
+  name: qwiklabs-gcp-00-ff1affaf12d1
 spec:
   replicas: 1
   selector:
