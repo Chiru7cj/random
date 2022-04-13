@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: random
+  name: github-actions-gke
 spec:
   replicas: 1
   selector:
