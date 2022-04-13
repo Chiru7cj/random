@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: qwiklabs-gcp-00-ff1affaf12d1
+  name: random
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: github-actions-gke
+      app: random
   template:
     metadata:
       labels:
-        app: github-actions-gke
+        app: random
     spec:
       containers:
         - name: app
