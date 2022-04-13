@@ -22,7 +22,7 @@ env:
   GKE_CLUSTER: github-actions-gke
   GKE_ZONE: us-central1-c
   DEPLOYMENT_NAME: github-actions-gke-dep
-  IMAGE: github-actions-gke-image
+  IMAGE: githubaction
   TAG: 1.0.0
 
 jobs:
