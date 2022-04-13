@@ -19,10 +19,10 @@ on:
 
 env:
   PROJECT_ID: ${{secrets.GKE_PROJECT}}
-  GKE_CLUSTER: cluster-1
+  GKE_CLUSTER: github-actions-gke
   GKE_ZONE: us-central1-c
-  DEPLOYMENT_NAME: github-actions-gke
-  IMAGE: githubaction
+  DEPLOYMENT_NAME: github-actions-gke-dep
+  IMAGE: github-actions-gke-image
   TAG: 1.0.0
 
 jobs:
@@ -43,7 +43,7 @@ jobs:
           settings-path: ${{ github.workspace }}
 
       - name: Build with Maven
-        run: mvn clean package -DskipTests
+        run: mvn clean package
 
       - name: Setup Google Cloud CLI
         uses: GoogleCloudPlatform/github-actions/setup-gcloud@0.1.3
